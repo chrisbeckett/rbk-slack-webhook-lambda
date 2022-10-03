@@ -80,4 +80,6 @@ Take the Function URL (e.g. https://xxxxxxxxx.lambda-url.eu-west-1.on.aws) creat
 
 ![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/aws-function-url.png "Lambda Function URL")
 
+In RSC :-
+
 ![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/webhook-url.png "RSC webhook target URL")
