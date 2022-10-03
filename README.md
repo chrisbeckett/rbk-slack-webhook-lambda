@@ -33,7 +33,7 @@ Run **git clone https://github.com/chrisbeckett/rbk-slack-webhook-lambda.git**
 
 The quickest way to deploy the function is to use the Terraform files provided in the /terraform folder. Simply update the **variables.tf** file to reflect your preferences around function names, AWS region to deploy etc. Pay special attention to the environment variables. If these are not configured properly, installation will fail.
 
-For example, change the variables file to deploy your function to EU West 1 (Ireland)
+For example, change the variables file to deploy your function to **EU West 1 (Ireland)**
 
 ```
 terraform {
@@ -63,7 +63,7 @@ default = "eu-west-1"
 }
 ```
 
-Also, make sure that your RSC tenant and Slack webhook URLs are correctly added to the create_lambda_function.tf file
+Also, make sure that your RSC tenant and Slack webhook URLs are correctly added to the **create_lambda_function.tf** file
 
 ```
 environment_variables = {
@@ -80,6 +80,6 @@ Take the Function URL (e.g. https://xxxxxxxxx.lambda-url.eu-west-1.on.aws) creat
 
 ![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/aws-function-url.png "Lambda Function URL")
 
-In RSC :-
+**In RSC :-**
 
 ![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/webhook-url.png "RSC webhook target URL")
