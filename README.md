@@ -72,7 +72,9 @@ environment_variables = {
   }
 ```
 
-**Known Issue** You may need to run **terraform apply** twice in order to generate the Function URL.
+##Known Issue
+
+You may need to run **terraform apply** twice in order to generate the Function URL.
 
 ## Creating the RSC webhook
 
