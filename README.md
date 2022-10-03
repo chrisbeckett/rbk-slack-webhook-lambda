@@ -20,10 +20,10 @@ Product documentation can be found at https://docs.rubrik.com/en-us/saas/saas/co
 - A Slack account
 - A Slack channel to send alerts to
 - An incoming Slack webhook URL (https://api.slack.com/messaging/webhooks)
-- Python 3.7/3.8/3.9 (3.10 is not currently supported by Azure Functions)
+- Python 3.7/3.8/3.9 (3.10 is not currently supported by AWS Lambda)
 - Git
-- AWS command line tools
-- Terraform
+- AWS CLI (https://aws.amazon.com/cli/)
+- Terraform (https://www.hashicorp.com/products/terraform)
 
 ## Obtaining the code
 
