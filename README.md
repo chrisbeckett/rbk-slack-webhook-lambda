@@ -76,4 +76,8 @@ environment_variables = {
 
 ## Creating the RSC webhook
 
-Take the Function URL (e.g. https://xxxxxxxxx.lambda-url.eu-west-1.on.aws) created by the Terraform template (Lambda function | Configuration | Function URL) and add it to your RSC webhook target configuration ![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/aws-function-url.png "Lambda Function URL")
+Take the Function URL (e.g. https://xxxxxxxxx.lambda-url.eu-west-1.on.aws) created by the Terraform template (Lambda function | Configuration | Function URL) and add it to your RSC webhook target configuration
+
+![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/aws-function-url.png "Lambda Function URL")
+
+![alt text](https://github.com/chrisbeckett/rbk-slack-webhook-lambda/blob/main/webhook-url.png "RSC webhook target URL")
