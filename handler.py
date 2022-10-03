@@ -2,6 +2,8 @@ from slack_sdk.webhook import WebhookClient
 import dateutil.parser
 import os
 import json
+import requests
+import re
 
 
 def slack_handler(event, context):
@@ -17,6 +19,21 @@ def slack_handler(event, context):
     else:
         print(
             f'Environment variables not set correctly, please review RSC and Slack webhook settings')
+
+    # Check the RSC URL is reachable
+    rsc_url_status = requests.get(rsc_tenant_url)
+    if rsc_url_status.status_code != 200:
+        print(
+            f'RSC tenant URL does not seem to be responding, please check the environment variable')
+
+    # Validate the Slack webhook URL is the correct syntax using RegEx
+    slack_webhook_url_check = re.search(
+        "https://hooks.slack.com/services/T[0-9A-Z]{10}/B[0-9A-Z]{10}/[a-zA-Z0-9]{24}", slack_webhook_url)
+    if slack_webhook_url_check:
+        print(f'Slack URL appears to be correctly formed')
+    else:
+        print(
+            f'Slack URL appears to be malformed - please check and remediate')
 
     rsc_event_payload = event.get('body')
     rsc_event_payload_dict = json.loads(rsc_event_payload)
